@@ -43,7 +43,7 @@
                     if((area1-area2)<=8 || (area1-area2)>=-8 ){
                      Console.WriteLine("Not Much Overlapping");
                 }else{
-                    if(!((area1-area2)<=8) && !((area1-area2)>=-8 )&&!((area1-area2)> 8) && !((area1-area2)< -8 )){
+                    if(!((area1-area2)<=8) && !((area1-area2)>=-8 ) && !((area1-area2)> 8) && !((area1-area2)< -8 )){
                      Console.WriteLine("No Overlapping");
                 }
                     Console.WriteLine("No Overlapping");
