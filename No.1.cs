@@ -27,12 +27,14 @@
                 double sumy1_2=y1-h1;
 
                 double sumx2=x2+w2;
-                double sum2_2=x2-w2;
+                double sumx2_2=x2-w2;
                 double sumy2=y2+h2;
                 double sumy2_2=y2-h2;
 
-                double area1 = h1*2+w1*2;
-                double area2 = h2*2+w2*2;
+                double area1 = sumy1+(-sumy1_2)*sumx1+(-sumx1_2);
+
+
+                double area2 = sumy2+(-sumy2_2)*sumx2+(-sumx2_2); 
                 
 
                 if((area1-area2)>8 && (area1-area2)<-8 ){
