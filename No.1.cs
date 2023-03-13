@@ -21,20 +21,20 @@
                 Console.WriteLine("Please input h2");
                 double h2 =double.Parse(Console.ReadLine());
 
-                double sumx1=x1+w1;
-                double sumx1_2=x1-w1;
-                double sumy1=y1+h1;
-                double sumy1_2=y1-h1;
+                int sumx1=(int)x1+(int)w1;
+                int sumx1_2=(int)x1-(int)w1;
+                int sumy1=(int)y1+(int)h1;
+                int sumy1_2=(int)y1-(int)h1;
 
-                double sumx2=x2+w2;
-                double sumx2_2=x2-w2;
-                double sumy2=y2+h2;
-                double sumy2_2=y2-h2;
+                int sumx2=(int)x2+(int)w2;
+                int sumx2_2=(int)x2-(int)w2;
+                int sumy2=(int)y2+(int)h2;
+                int sumy2_2=(int)y2-(int)h2;
 
-                double area1 = sumy1+(-sumy1_2)*sumx1+(-sumx1_2);
+                int area1 = sumy1+(-sumy1_2)*sumx1+(-sumx1_2);
 
 
-                double area2 = sumy2+(-sumy2_2)*sumx2+(-sumx2_2); 
+                int area2 = sumy2+(-sumy2_2)*sumx2+(-sumx2_2); 
                 
 
                 if((area1-area2)>8 && (area1-area2)<-8 ){
