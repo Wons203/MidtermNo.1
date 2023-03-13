@@ -37,12 +37,15 @@
                 int area2 = sumy2+(-sumy2_2)*sumx2+(-sumx2_2); 
                 
 
-                if((area1-area2)>8 && (area1-area2)<-8 ){
+                if((area1-area2)> 8 || (area1-area2)< -8 ){
                      Console.WriteLine("Too Much Overlaping");
                 }else{ 
-                    if((area1-area2)<=8 && (area1-area2)>=-8 ){
+                    if((area1-area2)<=8 || (area1-area2)>=-8 ){
                      Console.WriteLine("Not Much Overlapping");
                 }else{
+                    if(!((area1-area2)<=8) && !((area1-area2)>=-8 )&&!((area1-area2)> 8) && !((area1-area2)< -8 )){
+                     Console.WriteLine("No Overlapping");
+                }
                     Console.WriteLine("No Overlapping");
                 }
                 
